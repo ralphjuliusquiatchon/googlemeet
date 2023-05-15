@@ -14,6 +14,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
+    padding: 0 10px;
 
 }
 
@@ -23,12 +24,14 @@ main > div {
     position: relative;
     margin-left: 5px;
     margin-right: 5px;
+    
 }
 
 main div img{
     width: 100%;
     height: 100%;
     display: block;
+    border-radius: 10px;
 }
 
 main div .user-name{
@@ -37,6 +40,7 @@ main div .user-name{
     left: 20px;
     bottom: 20px;
     display: inline-block;
+  
 }
 
 
@@ -44,5 +48,30 @@ footer{
     width: 100%;
     height: 10vh;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
 
+footer *{
+    color: white;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(103, 99, 99, 0.675);
+    font-size: 1.5em;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+}
+
+.buttons-no-bg *{
+    background-color: black;
+}
+
+.bg-red{
+    background-color: red;
 }
